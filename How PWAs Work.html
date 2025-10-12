@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How PWAs Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>How Progressive Web Applications (PWAs) Work</h1>
+
+    <hr>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="Key Concepts.html">Key Concepts</a> |
+        <a href="How PWAs Work.html">How PWAs Work</a> |
+        <a href="PWAs vs Others.html">PWAs vs. Apps and Sites</a> |
+        <a href="References.html">References</a> |
+        <a href="About.html">About</a> |
+    </nav>
+    <hr>
+
+    <h2>Core Technologies Behind PWAs</h2>
+    <p>Progressive Web Applications leverage several modern web technologies to deliver an app-like experience.</p> 
+    <p>The key components include:</p>
+
+    <!--I used the <u> tag to underline the headings. I used <h3> to make them a bit smaller than the other
+    subheadings-->
+    <h3><u>Service Workers</u></h3> 
+    <p>Service workers are a core technology that make Progressive Web Applications work offline and load quickly.
+        They are background scripts that run separately from the main web page, allowing the browser to intercept 
+        network requests and decide how to handle them. For example, when a user visits a PWA, the service worker 
+        can store or “cache” important files like images, HTML, and CSS so they can load instantly the next time — 
+        even without an internet connection. Service workers also make features like push notifications and 
+        background syncing possible, helping PWAs feel more like native mobile apps.</p>
+
+    <h3><u>Web App Manifest</u></h3>
+    <p>The Web App Manifest is a simple JSON file that tells the browser how the web application should look and 
+        behave when installed on a device. It includes information such as the app's name, icons, theme color, 
+        start page, and display mode (for example, whether it should open in full screen or within the browser). 
+        This file allows users to add a PWA to their home screen just like a regular app, giving them quick access 
+        and an immersive experience. Without the manifest, a PWA would behave like a normal website, but with it, 
+        the site feels and functions more like a real app.</p>
+
+    <h3><u>HTTPS</u></h3>
+    <p>Progressive Web Applications must be served over HTTPS, which stands for Hypertext Transfer Protocol 
+        Secure. HTTPS ensures that all communication between the user's browser and the web server is encrypted and 
+        secure. This protects users from data theft, tampering, and malicious attacks. It also allows PWAs to use 
+        advanced browser features, since many of them — like service workers and location APIs — only work on secure 
+        connections. HTTPS not only builds trust with users but is also a requirement for any website that wants to 
+        be considered a true PWA.</p>
+
+    <h3><u>Responsive Design</u></h3>
+    <p>Responsive design is a web development approach that ensures a website or application looks and functions 
+        properly on all devices, from large desktop screens to small smartphones. For PWAs, responsive design is 
+        especially important because these applications are meant to provide a consistent, app-like experience across 
+        platforms. Developers use flexible layouts, scalable images, and CSS media queries to adapt the interface to 
+        different screen sizes and orientations. A PWA that is well-designed responsively feels natural to use, 
+        no matter what device the user is on.</p>
+
+    <h3><u>Progressive Enhancement</u></h3>
+    <p>Progressive enhancement is a design strategy that focuses on building a basic, functional version of a 
+        website that works for all users, and then adding more advanced features for browsers that support them. 
+        This principle is what the “progressive” in Progressive Web Application refers to. For example, a PWA might 
+        first load simple HTML and CSS so it works even on older devices, then add features like offline access or 
+        notifications for users with modern browsers. This approach ensures accessibility, performance, and 
+        reliability across all environments.</p>
+    
+    <h3><u>APIs</u></h3>
+    <p>Application Programming Interfaces, or APIs, allow PWAs to interact with device hardware and browser 
+        features in ways that were once only possible for native apps. Through APIs, a PWA can access things like 
+        the camera, GPS, microphone, or notifications — always with the user's permission. For instance, the 
+        Geolocation API lets a PWA show nearby stores, while the Notifications API can send alerts when new
+        content is available. These APIs expand what web apps can do, making PWAs more powerful and 
+        interactive than traditional websites.</p>
+</body>
+</html>

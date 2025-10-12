@@ -1,0 +1,134 @@
+/* Using element selector to style the body*/
+body {
+  /* I set my background to a light blue*/
+  background-color: #c2e1eb;
+  /*I set Tahoma as my main font and aligned the text to the center by default*/
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  /* I made a margin outside of a white border, with padding to give some distance between the border and text*/
+  margin: 40px;
+  padding: 25px; 
+  border: 4px solid #ffffff;
+  /*I used the border-radius property to give the border rounded corners*/
+  border-radius: 10px;
+}
+
+/* I made my main headings have the Trebuchet font in a specified size of 36px with a darker blue color*/
+h1 {
+  font-family: Trebuchet, sans-serif;
+  font-size: 36px;
+  color: #012c58;
+/* I also added bottom margins to give some space between the heading and the content below it*/
+  margin-bottom: 20px;
+}
+
+/*Same font as h1 but smaller size and a different shade of blue*/
+h2 {
+  font-family: Trebuchet, sans-serif;
+  font-size: 26px;
+  color: #003b76;
+/*I also added top margins to give some space between the subheadings and the content above it*/
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* I created a special class for the list on the About page to remove the default bullet points and 
+align text to the left */
+.special-list {
+  list-style-type: none;
+  text-align: left;
+  margin: 25px;
+}
+
+/* I made the main body texts, including paragraphs and list items, have the Tahoma font in a size of 17px 
+with 2.0 line spacing for better readability*/
+p, li {
+  font-family: Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 2.0;
+/* I set the color to black and set a maximum width to keep the text from stretching too wide, 
+and also for the layout*/
+  color: #000000;
+/* I also added margins to give some space between elements. I used the auto value to center the text.*/
+  margin: 10px auto;
+  max-width: 1000px;
+}
+
+/* I styled the navigation bar to have a white background with a blue border and rounded corners*/
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid #0058b1;
+  border-radius: 10px;
+/* I set margins to give space around it and center it, and set a width percentage to control its size*/
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* I styled the links within the navigation bar to have a blue color, no underline (text decoration), 
+and bold font*/
+a {
+  color: #1169c0;
+  text-decoration: none;
+  font-weight: bold;
+/* I added horizontal margins to space out the links as well*/
+  margin: 0 8px;
+}
+
+/* I added a hover effect to the links to change their color to white and background to blue when hovered over*/
+a:hover {
+  color: #ffffff;
+  background-color: #1169c0;
+/* I also added padding and rounded corners to the hover effect for better aesthetics*/
+/*I made the top and bottom padding 5px and the left and right padding 8px, for a nice rectangular look*/
+  padding: 5px 8px;
+  border-radius: 5px;
+/* I used the transition property for a smoother change*/
+  transition: 0.3s;
+}
+
+/* I styled images to be centered with margins and have a maximum width to prevent overflowing, 
+like with the text*/
+img {
+  margin: 20px auto;
+  max-width: 90%;
+/* I added a white border with rounded corners to the images for aesthetics*/
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+
+/* I styled the tables to be centered with margins, a set width, a white background, and a blue border*/
+table {
+  margin: 25px auto;
+/*I used the border-collapse property with the collapse value to make the table borders look cleaner*/
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #ffffff;
+  border: 3px solid #003b76;
+}
+
+/*I styled the table headers in the same font as the main headings and applied a blue background, darker blue
+border, padding, and white text*/
+th {
+  background-color: #1169c0;
+  color: white;
+  font-family: Trebuchet, sans-serif;
+  font-size: 18px;
+  padding: 15px;
+  border: 2px solid #003b76;
+}
+
+/* I styled the other table cells similarly, but smaller and with black text and no background color*/
+td {
+  border: 1px solid #003b76;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* I gave the footer an ID called "special" to use another type of selector to style it differently*/
+#special {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #1c72c7;
+}
