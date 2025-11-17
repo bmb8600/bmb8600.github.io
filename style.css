@@ -65,7 +65,7 @@ nav {
   border-radius: 10px;
 /* I set margins to give space around it and center it, and set a width percentage to control its size*/
   margin: 20px auto;
-  width: 80%;
+  width: 90%;
 }
 
 /* I styled the links within the navigation bar to have a blue color, no underline (text decoration), 
