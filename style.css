@@ -1,7 +1,10 @@
+/*Added all quiz CSS at the 2nd milestone. Also added highlight 
+class for text highlighting and styling for captions*/
+
 /* Using element selector to style the body*/
 body {
   /* I set my background to a light blue*/
-  background-color: #c2e1eb;
+  background-color:   #c2e1eb;
   /*I set Tahoma as my main font and aligned the text to the center by default*/
   font-family: Tahoma, sans-serif;
   text-align: center;
@@ -147,7 +150,7 @@ figcaption {
 
 /*Adding a special class called highlight to make certain text stand out*/
 .highlight {
-  color: #1169c0;
+  color: #ea7900;
   font-weight: bold;
 }
 
