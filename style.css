@@ -91,7 +91,7 @@ a:hover {
 like with the text*/
 img {
   margin: 20px auto;
-  max-width: 90%;
+  max-width: 50%;
 /* I added a white border with rounded corners to the images for aesthetics*/
   border: 3px solid #ffffff;
   border-radius: 8px;
@@ -131,4 +131,108 @@ td {
   margin-top: 30px;
   font-size: 14px;
   color: #1c72c7;
+}
+/* I styled the figure and figcaption elements to center images with captions and style the captions in a smaller font size with italics*/
+figure {
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #003b76;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/*Adding a special class called highlight to make certain text stand out*/
+.highlight {
+  color: #1169c0;
+  font-weight: bold;
+}
+
+/* I styled the quiz form to have a white background, blue border, rounded corners, and padding*/
+#quizForm {
+background-color: #ffffff;
+border: 3px solid #0058b1;
+border-radius: 10px;
+padding: 25px;
+margin: 30px auto;
+width: 80%;
+max-width: 900px;
+text-align: left;
+}
+
+/* I styled the quiz form headings to use the Trebuchet font, a specific size, and a blue color*/
+#quizForm h3 {
+font-family: Trebuchet, sans-serif;
+font-size: 22px;
+color: #003b76;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+/* I styled the labels and input fields within the quiz form for better readability and usability*/
+#quizForm label {
+font-size: 17px;
+display: block;
+margin: 6px 0;
+cursor: pointer;
+}
+
+/* I styled the text input fields to have padding, a blue border, rounded corners, and a set width*/
+#quizForm input[type="text"] {
+width: 60%;
+padding: 8px;
+border: 2px solid #1169c0;
+border-radius: 5px;
+font-size: 16px;
+}
+
+/* I styled the submit button to have a blue background, white text, no border, padding, rounded corners,
+and a larger font size*/
+#quizForm button {
+background-color: #1169c0;
+color: white;
+border: none;
+padding: 10px 18px;
+margin: 15px 10px 0 0;
+border-radius: 6px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+/* I added a hover effect to the submit and reset buttons to change their background color to a darker blue when hovered over*/
+#quizForm button:hover {
+background-color: #004a87;
+}
+
+/* I styled the results section to have a white background, blue border, rounded corners, and padding*/
+#results {
+background-color: #ffffff;
+border: 3px solid #0058b1;
+border-radius: 10px;
+padding: 20px;
+margin: 30px auto;
+width: 80%;
+max-width: 900px;
+text-align: left;
+}
+
+/* I styled the correct and incorrect messages with different colors and bold font*/
+.correct {
+color: green;
+font-weight: bold;
+}
+.incorrect {
+color: red;
+font-weight: bold;
+}
+
+/* I styled the results section headings to have a specific font size and color*/
+#results h3 {
+font-size: 24px;
+color: #012c58;
 }
