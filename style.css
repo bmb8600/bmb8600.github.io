@@ -293,6 +293,11 @@ max-width: 900px;
 text-align: left;
 }
 
+/* Make quiz and results fit within their container even at 100% width */
+#quizForm, #results {
+  box-sizing: border-box;
+}
+
 /* I styled the quiz form headings to use the Trebuchet font, a specific size, and a blue color*/
 #quizForm h3 {
 font-family: Trebuchet, sans-serif;
@@ -393,7 +398,8 @@ color: #012c58;
   nav a {
     display: block;
     padding: 10px 0px;
-    margin: 6px 0px;
+    margin: 6px 60px;
+    border: #000000 3px solid;
   }
 
 /* I set the images to have a maximum width of 100% to prevent overflow on small screens*/
@@ -407,24 +413,34 @@ color: #012c58;
     width: 100%;
   }
 
+  /* I made the comparison item images take full width on small screens*/
+  /*I used display: block to allow for a scrollbar if needed*/
+  /* I also used the overflow property to prevent overflow issues with content spilling outside of the table*/
   table {
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    overflow-x: auto;
     font-size: 14px;
   }
 
+  /* I adjusted the table cell padding and enabled word wrapping for better readability on small screens*/
   th, td {
     padding: 6px;
+    word-wrap: break-word
   }
 
   /* I made the quiz form and results section take full width on small screens and adjusted padding and margins*/
   #quizForm, #results {
+    box-sizing: border-box;
     width: 100%;
     padding: 15px;
     margin: 20px auto;
   }
   
   #quizForm input[type="text"] {
-    width: 100%;
+    width: 80%;
   }
 
   #quizForm button {
@@ -442,7 +458,7 @@ color: #012c58;
   }
 
   table, #quizForm, #results {
-    width: 70%;
+    width: 90%;
   }
 
 /* I created a class for a two-column layout for text sections on larger screens*/
