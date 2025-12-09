@@ -7,111 +7,134 @@
     <title>PWAs vs. Apps and Websites</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>PWAs vs. Native Apps and Traditional Websites</h1>
 
-    <hr>
-    <nav>
+<body>
+    <header>
+        <h1>PWAs vs. Native Apps and Traditional Websites</h1>
+    </header>
+
+     <nav>
         <a href="index.html">Home</a> |
         <a href="Key Concepts.html">Key Concepts</a> |
         <a href="How PWAs Work.html">How PWAs Work</a> |
         <a href="PWAs vs Others.html">PWAs vs. Apps and Sites</a> |
-        <a href="References.html">References</a> |
+        <a href= "Quiz.html">Self-Assessment Quiz</a> |
         <a href="About.html">About</a> |
-        <a href= "Quiz.html">Self-Assessment Quiz</a>
+        <a href="References.html">References</a>
     </nav>
-    <hr>
 
-    <h2>Understanding the Differences</h2>
-    <p>Progressive Web Applications (PWAs) offer a unique blend of features that set them apart from both 
-        native apps and traditional websites. Below is a comparison of these three types of digital experiences:</p>
+    <main class="content-wrapper">
 
-    <h3><u>Native Apps</u></h3>
-    <p><span class= "highlight">Native apps are software applications</span> developed specifically for a particular operating system, such as 
-        iOS or Android. They are downloaded and installed from app stores and can access device hardware and features 
-        directly. Native apps often provide the best performance and user experience, but they require separate 
-        development for each platform, which can be <span class= "highlight">costly and time-consuming</span></p>
+        <div class="highlight-box">
+            <h2>Understanding the Differences</h2>
+            <p>Progressive Web Applications (PWAs) offer a unique blend of features that set them apart from both 
+            native apps and traditional websites. Below is a comparison of these three types of digital experiences:</p>
+        </div>
 
-    <!--I used the alt attribute for accessibility and used the figure element to add a caption-->
-    <figure>
-    <img src="images/Native Apps.jpg" alt="Native App on Phone">
-    <figcaption>An example of a native mobile app interface.</figcaption>
-    </figure>
+        <div class="comparison-sections">
 
+            <div class="comparison-item">
+                <h3><u>Native Apps</u></h3>
+                <p><span class= "highlight">Native apps are software applications</span> developed specifically for a particular operating system, such as 
+                    iOS or Android. They are downloaded and installed from app stores and can access device hardware and features 
+                    directly. Native apps often provide the best performance and user experience, but they require separate 
+                    development for each platform, which can be <span class= "highlight">costly and time-consuming</span></p>
 
-    <h3><u>Traditional Websites</u></h3>
-    <p><span class= "highlight">Traditional websites are accessed through web browsers</span> and are built using standard web technologies like 
-        HTML, CSS, and JavaScript. They are <span class= "highlight">platform-independent</span> and can be viewed on any device with a browser. 
-        However, traditional websites typically <span class= "highlight">lack advanced features</span> like offline access, push notifications, and 
-        home screen installation, which can limit their functionality compared to native apps.</p>
+        <!--I used the alt attribute for accessibility and used the figure element to add a caption-->
+                <figure>
+                    <img src="images/Native Apps.jpg" alt="Native App on Phone">
+                    <figcaption>An example of a native mobile app interface.</figcaption>
+                </figure>
 
-    <figure>
-    <img src="images/Traditional Website.png" alt="Traditional Website on PC">
-    <figcaption>A traditional desktop website layout.</figcaption>
-    </figure>
+            </div>
 
+            <div class="comparison-item">
+                <h3><u>Traditional Websites</u></h3>
+                <p><span class= "highlight">Traditional websites are accessed through web browsers</span> and are built using standard web technologies like 
+                    HTML, CSS, and JavaScript. They are <span class= "highlight">platform-independent</span> and can be viewed on any device with a browser. 
+                    However, traditional websites typically <span class= "highlight">lack advanced features</span> like offline access, push notifications, and 
+                    home screen installation, which can limit their functionality compared to native apps.</p>
+                <figure>
+                    <img src="images/Traditional Website.png" alt="Traditional Website on PC">
+                    <figcaption>A traditional desktop website layout.</figcaption>
+                </figure>
+            </div>
 
-    <h3><u>Progressive Web Applications (PWAs)</u></h3>
-    <p><span class= "highlight">PWAs combine the best of both worlds</span> by leveraging modern web technologies to deliver an app-like 
-        experience through a web browser. They <span class= "highlight">can be installed</span> on a user's device, work offline, send push 
-        notifications, and provide fast loading times. PWAs are <span class= "highlight">platform-independent,</span> so they can run on any 
-        device with a compatible browser, reducing development costs and time. While they may not always match 
-        the performance of native apps, PWAs offer a <span class= "highlight">highly accessible and engaging</span> user experience.</p>
-    <figure>
-    <img src="images/PWA Example On Phone.jpg" alt="PWA on Phone">
-    <figcaption>A Progressive Web App running on a smartphone.</figcaption>
-    </figure>
+            <div class="comparison-item">
+                <h3><u>Progressive Web Applications (PWAs)</u></h3>
+                <p><span class= "highlight">PWAs combine the best of both worlds</span> by leveraging modern web technologies to deliver an app-like 
+                experience through a web browser. They <span class= "highlight">can be installed</span> on a user's device, work offline, send push 
+                notifications, and provide fast loading times. PWAs are <span class= "highlight">platform-independent,</span> so they can run on any 
+                device with a compatible browser, reducing development costs and time. While they may not always match 
+                the performance of native apps, PWAs offer a <span class= "highlight">highly accessible and engaging</span> user experience.</p>
 
+                <figure>
+                    <img src="images/PWA Example On Phone.jpg" alt="PWA on Phone">
+                    <figcaption>A Progressive Web App running on a smartphone.</figcaption>
+                </figure>
+            </div>
+        </div>
 
-    <hr>
-    <h2>Comparisons</h2>
-    <!--I used the table element to create a table-->
-    <table>
-        <tr>
-            <!--I used the table header element to create a row full of headers that are formatted according
-            to my CSS file-->
-            <th>Feature</th>
-            <th>Native Apps</th>
-            <th>Traditional Websites</th>
-            <th>Progressive Web Apps (PWAs)</th>
-        </tr>
-        <tr>
-            <!--I made the table data align with the headers-->
-            <td><strong>Installation</strong></td>
-            <td>From app stores</td>
-            <td>No installation required</td>
-            <td>From browser, can be added to home screen</td>
-        </tr>
-        <tr>
-            <td><strong>Offline Access</strong></td>
-            <td>Yes</td>
-            <td>No</td>
-            <td>Yes, with service workers</td>
-        </tr>
-        <tr>
-            <td><strong>Push Notifications</strong></td>
-            <td>Yes</td>
-            <td>No</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td><strong>Platform Dependency</strong></td>
-            <td>Platform-specific (iOS, Android)</td>
-            <td>Platform-independent (any browser)</td>
-            <td>Platform-independent (any browser)</td>
-        </tr>
-        <tr>
-            <td><strong>Development Cost</strong></td>
-            <td>High (multiple platforms)</td>
-            <td>Low (single codebase)</td>
-            <td>Moderate (single codebase with advanced features)</td>
-        </tr>
-        <tr>
-            <td><strong>User Experience</strong></td>
-            <td>Best performance and UX</td>
-            <td>Basic UX, limited features</td>
-            <td>App-like experience, good performance</td>
-        </tr>
-    </table>
+        <hr>
+        <h2 class="highlight-box">Comparisons</h2>
+        <!--I used the table element to create a table-->
+        <table>
+            <tr>
+                <!--I used the table header element to create a row full of headers that are formatted according
+                to my CSS file-->
+                <th>Feature</th>
+                <th>Native Apps</th>
+                <th>Traditional Websites</th>
+                <th>Progressive Web Apps (PWAs)</th>
+            </tr>
+            <tr>
+                <!--I made the table data align with the headers-->
+                <td><strong>Installation</strong></td>
+                <td>From app stores</td>
+                <td>No installation required</td>
+                <td>From browser, can be added to home screen</td>
+            </tr>
+            <tr>
+                <td><strong>Offline Access</strong></td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes, with service workers</td>
+            </tr>
+            <tr>
+                <td><strong>Push Notifications</strong></td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td><strong>Platform Dependency</strong></td>
+                <td>Platform-specific (iOS, Android)</td>
+                <td>Platform-independent (any browser)</td>
+                <td>Platform-independent (any browser)</td>
+            </tr>
+            <tr>
+                <td><strong>Development Cost</strong></td>
+                <td>High (multiple platforms)</td>
+                <td>Low (single codebase)</td>
+                <td>Moderate (single codebase with advanced features)</td>
+            </tr>
+            <tr>
+                <td><strong>User Experience</strong></td>
+                <td>Best performance and UX</td>
+                <td>Basic UX, limited features</td>
+                <td>App-like experience, good performance</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer id="footer">
+        <a href="How PWAs Work.html" class="footer-button back"> Back </a>
+        <span>
+            This is a class project for KSU IT 3203.
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank"> Course Link</a>
+        </span>
+
+        <a href="Quiz.html" class="footer-button next"> Next </a>
+    </footer>
 </body>
 </html>

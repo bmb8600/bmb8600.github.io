@@ -11,55 +11,66 @@
 </head>
 
 <body>
-    <!--Main heading and horizontal rule for formatting-->
-    <h1>Progressive Web Applications (PWAs)</h1>
-    <hr>
+    <!--Main heading using header tag and horizontal rule for formatting-->
+    <header>
+        <h1>Progressive Web Applications (PWAs)</h1>
+    </header>
+
     <!--Navigation bar with links to other pages on the site-->
     <nav>
         <a href="index.html">Home</a> |
         <a href="Key Concepts.html">Key Concepts</a> |
         <a href="How PWAs Work.html">How PWAs Work</a> |
         <a href="PWAs vs Others.html">PWAs vs. Apps and Sites</a> |
-        <a href="References.html">References</a> |
+        <a href= "Quiz.html">Self-Assessment Quiz</a> |
         <a href="About.html">About</a> |
-        <a href= "Quiz.html">Self-Assessment Quiz</a>
+        <a href="References.html">References</a>
     </nav>
-    <hr>
+
+    <main class="content-wrapper">
     <!--Subheading and introductory paragraph about PWAs-->
-    <h2> What are PWAs?</h2>
-    <p>A <span class= "highlight">progressive web application </span>(PWA) is a website built with modern web technologies that 
-        provides a user experience similar to a native mobile or desktop app. It combines the broad reach
-        of the web with many advanced, app-like features. PWAs can be installed on a user's device directly
-        from a web browser, and they can even function when the device is offline.</p>
-    <hr>
+    <div class= "highlight-box">
+        <h2> What are PWAs?</h2>
+        <p>A <span class= "highlight">progressive web application </span>(PWA) is a website built with modern web technologies that 
+            provides a user experience similar to a native mobile or desktop app. It combines the broad reach
+            of the web with many advanced, app-like features. PWAs can be installed on a user's device directly
+            from a web browser, and they can even function when the device is offline.</p>
+    </div>
 
-    <h2>Key Features of PWAs</h2>
-    <!--I used an unordered list here with bold text using the <strong> tag.-->
-    <ul>
-        <li>
-            <strong>Responsive Design:</strong> PWAs are designed to work on any device, whether it's a desktop, 
-            tablet, or smartphone.</li>
-        <li>
-            <strong>Offline Functionality:</strong> PWAs can work offline or with a poor internet connection 
-            using service workers to cache resources.</li>
-        <li>
-            <strong>App-like Experience:</strong> PWAs provide a user experience similar to native apps, 
-            including smooth animations and navigation.</li>
-        <li>
-            <strong>Easily Installable:</strong> Users can install PWAs on their home screen without going 
-            through an app store.</li>
-        <li>
-            <strong>Linkable:</strong> PWAs can be easily shared via URL, making them accessible and discoverable,
-            just like a regular website.</li>
-    </ul>
+        <h2>Key Features of PWAs</h2>
+        <!--I used an unordered list here with bold text using the <strong> tag.-->
+        <ul>
+            <li>
+                <strong>Responsive Design:</strong> PWAs are designed to work on any device, whether it's a desktop, 
+                tablet, or smartphone.</li>
+            <li>
+                <strong>Offline Functionality:</strong> PWAs can work offline or with a poor internet connection 
+                using service workers to cache resources.</li>
+            <li>
+                <strong>App-like Experience:</strong> PWAs provide a user experience similar to native apps, 
+                including smooth animations and navigation.</li>
+            <li>
+                <strong>Easily Installable:</strong> Users can install PWAs on their home screen without going 
+                through an app store.</li>
+            <li>
+                <strong>Linkable:</strong> PWAs can be easily shared via URL, making them accessible and discoverable,
+                just like a regular website.</li>
+        </ul>
 
-    <!--Image with alt text for accessibility. Image is contained in the repository-->
-    <img src="images/PWAs Intro.png" alt = "PWAs Graphic">
-    <hr>
-    <!--I wrote the footer here with a link to the class page-->
-    <footer id="special"> This is a class project for KSU IT 3203.
-        <!--I set the target to _blank to open the link in a new tab-->
-        <a href="https://ksuweb.github.io/IT3203/" target="_blank"> Course Link</a>
+        <!--Image with alt text for accessibility. Image is contained in the repository-->
+        <img src="images/PWAs Intro.png" alt = "PWAs Graphic">
+    </main>
+
+    <footer id="footer">
+        <!-- I used a span element to group the text and link into one item and work with the flexbox layout-->
+        <span></span>
+        <span>
+            This is a class project for KSU IT 3203.
+            <!--I set the target to _blank to open the link in a new tab-->
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank"> Course Link</a>
+        </span>
+
+        <a href="Key Concepts.html" class="footer-button next"> Next </a>
     </footer>
 
 </body>
