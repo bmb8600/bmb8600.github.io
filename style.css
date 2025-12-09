@@ -1,5 +1,13 @@
 /*Added all quiz CSS at the 2nd milestone. Also added highlight 
 class for text highlighting and styling for captions*/
+/*Added media queries and multiple classes for responsive design at the 3rd milestone*/
+/*Also added CSS Grid for comparison sections and two-column text layout at 3rd milestone*/
+
+/*Setting a max width and preventing horizontal overflow for the entire page*/
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 /* Using element selector to style the body*/
 body {
@@ -8,13 +16,34 @@ body {
   /*I set Tahoma as my main font and aligned the text to the center by default*/
   font-family: Tahoma, sans-serif;
   text-align: center;
-  /* I made a margin outside of a white border, with padding to give some distance between the border and text*/
-  margin: 40px;
-  padding: 25px; 
-  border: 4px solid #ffffff;
-  /*I used the border-radius property to give the border rounded corners*/
-  border-radius: 10px;
+  margin: 0px;
+  padding: 0px; 
 }
+
+/* I made a main content box with a white border (excludes the header/nav/footer) */
+.content-wrapper {
+  margin: 40px auto;
+  padding: 25px;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  max-width: 1000px;
+  background-color: transparent;
+}
+
+/* I added a header with navy blue background and white text */
+header {
+  background-color: #012c58;
+  color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* I made the color of the header text white specifically */
+header h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
 
 /* I made my main headings have the Trebuchet font in a specified size of 36px with a darker blue color*/
 h1 {
@@ -57,15 +86,14 @@ and also for the layout*/
   max-width: 1000px;
 }
 
-/* I styled the navigation bar to have a white background with a blue border and rounded corners*/
+/* I styled the navigation bar to have a dark gray background with no border so it would go across the page*/
 nav {
-  background-color: #ffffff;
+  background-color: #333333;
   padding: 10px;
-  border: 2px solid #0058b1;
-  border-radius: 10px;
+  border-radius: 0px;
 /* I set margins to give space around it and center it, and set a width percentage to control its size*/
-  margin: 20px auto;
-  width: 90%;
+  margin: 0px auto 20px auto;
+  width: 100%;
 }
 
 /* I styled the links within the navigation bar to have a blue color, no underline (text decoration), 
@@ -90,6 +118,17 @@ a:hover {
   transition: 0.3s;
 }
 
+/* I made nav links specifically have light gray text */
+nav a {
+  color: #e0e0e0;
+}
+
+/* I changed the hover effect of navbar links to match the nav background*/
+nav a:hover {
+  color: #ffffff;
+  background-color: #555555;
+}
+
 /* I styled images to be centered with margins and have a maximum width to prevent overflowing, 
 like with the text*/
 img {
@@ -100,12 +139,23 @@ img {
   border-radius: 8px;
 }
 
+/* I adjusted the comparison item images to take 80% on smaller screens*/
+.comparison-item img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
 /* I styled the tables to be centered with margins, a set width, a white background, and a blue border*/
 table {
   margin: 25px auto;
 /*I used the border-collapse property with the collapse value to make the table borders look cleaner*/
   border-collapse: collapse;
   width: 80%;
+/* I set a maximum width to prevent overflow on smaller screens*/
+  max-width: 100%;
   background-color: #ffffff;
   border: 3px solid #003b76;
 }
@@ -129,12 +179,73 @@ td {
   color: #000000;
 }
 
-/* I gave the footer an ID called "special" to use another type of selector to style it differently*/
-#special {
+/* I styled the references list to have no bullet points, be centered text with margins, and a white background*/
+.references-list {
+  list-style-type: none;
+  padding: 0;
+  border: #cccccc 1px solid;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #ffffff;
+}
+
+/* I styled each reference item with padding, a bottom border, and center-aligned text*/
+.references-list li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+
+/* I removed the bottom border from the last reference item for better aesthetics*/
+.references-list li:last-child {
+  border-bottom: none;
+}
+
+/* I styled the footer to have a navy blue background, white text, padding, and margin at the top to separate it from content*/
+/* I used flexbox to layout the footer content for better alignment and spacing*/
+#footer {
+  background-color: #012c58;
+  color: #ffffff;
   margin-top: 30px;
   font-size: 14px;
-  color: #1c72c7;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+/* I styled the links within the footer to have white text and no underline*/
+#footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* I created a special class for footer buttons to have a blue background, padding, rounded corners, and bold font*/
+.footer-button {
+  background-color: #004a87;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* I added a hover effect to the footer buttons to change their background color to a lighter blue when hovered over*/
+.footer-button:hover {
+  background-color: #0060b8;
+  color: #ffffff;
+}
+
+/* I added a special class for comparison sections to give them top margins for spacing*/
+.comparison-sections {
+  margin-top: 20px;
+}
+
+/* I styled each comparison item to have bottom margins for spacing between them*/
+.comparison-item {
+  margin-bottom: 20px;
+}
+
 /* I styled the figure and figcaption elements to center images with captions and style the captions in a smaller font size with italics*/
 figure {
   margin: 20px auto;
@@ -152,6 +263,22 @@ figcaption {
 .highlight {
   color: #ea7900;
   font-weight: bold;
+}
+
+/*Added a styled highlighted box to put around sections of text */
+/*I gave the box a light gray background, padding, rounded corners, and margins to separate it from other content*/
+.highlight-box {
+  background-color: #f2f2f2c1;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* I created a class for a two-column layout for text sections*/
+.two-column-text {
+  width: 100%;
+  margin: 20px auto;
 }
 
 /* I styled the quiz form to have a white background, blue border, rounded corners, and padding*/
@@ -238,4 +365,107 @@ font-weight: bold;
 #results h3 {
 font-size: 24px;
 color: #012c58;
+}
+
+/* Using a media query to allow responsive design for phone screens */
+@media (max-width: 600px) {
+
+  .content-wrapper {
+    margin: 10px;
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  
+  nav {
+    width: 100%;
+    padding: 8px;
+  }
+
+/* I made the navigation links stack vertically on small screens for better usability*/
+  nav a {
+    display: block;
+    padding: 10px 0px;
+    margin: 6px 0px;
+  }
+
+/* I set the images to have a maximum width of 100% to prevent overflow on small screens*/
+  img {
+    max-width: 100%;
+  }
+
+/* I used the auto value for margins to center the figures on small screens*/
+  figure {
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  /* I made the quiz form and results section take full width on small screens and adjusted padding and margins*/
+  #quizForm, #results {
+    width: 100%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+  
+  #quizForm input[type="text"] {
+    width: 100%;
+  }
+
+  #quizForm button {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media query for desktop and larger screens*/
+@media (min-width: 900px) {
+
+  .content-wrapper {
+    max-width: 1100px;
+  }
+
+  table, #quizForm, #results {
+    width: 70%;
+  }
+
+/* I created a class for a two-column layout for text sections on larger screens*/
+/* I used the column-count property to create two columns and set a gap between them*/
+  .two-column-text {
+    column-count: 2;
+    column-gap: 40px;
+  }
+/* I adjusted the comparison sections to use CSS Grid for a two-column layout on larger screens*/
+  .comparison-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+/* I made the first comparison item span both columns to fill the grid more aesthetically*/
+  .comparison-item:first-child {
+    grid-column: span 2;
+  }
+
+/* I adjusted the special list class to have two columns on larger screens*/
+    .special-list {
+    column-count: 2;
+    column-gap: 40px;
+  }
 }

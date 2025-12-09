@@ -6,25 +6,52 @@
     <title>About</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>About This Site</h1>
 
-    <hr>
-    <nav>
+<body>
+    <header>
+        <h1>About This Site</h1>
+    </header>
+
+     <nav>
         <a href="index.html">Home</a> |
         <a href="Key Concepts.html">Key Concepts</a> |
         <a href="How PWAs Work.html">How PWAs Work</a> |
         <a href="PWAs vs Others.html">PWAs vs. Apps and Sites</a> |
-        <a href="References.html">References</a> |
+        <a href= "Quiz.html">Self-Assessment Quiz</a> |
         <a href="About.html">About</a> |
-        <a href= "Quiz.html">Self-Assessment Quiz</a>
+        <a href="References.html">References</a>
     </nav>
+
+    <main class="content-wrapper">
+        <div class="highlight-box">
+            <h2><u>Project Purpose and Overview</u></h2>
+            <p>This website was created for my Intro to Web Development (IT 3203) course to explore and explain the 
+            concept of Progressive Web Applications (PWAs). The goal of this project is to provide a comprehensive 
+            overview of PWAs and their features while showcasing and applying web development skills.</p>
+        </div>
+        
+    <p>This site consists of several pages that cover different topics related to PWAs:</p>
+    <!--I used the class in my stylesheet to style this list differently with no bullet points and left aligned-->
+    <ul class="special-list">
+        <li><strong>Home Page:</strong> An introduction to PWAs and their key features.</li>
+        <li><strong>Key Concepts:</strong> A table of definitions of the key concepts discussed.</li>
+        <li><strong>How PWAs Work:</strong> An in-depth look at the technologies behind PWAs, including 
+            service workers, web app manifests, and more.</li>
+        <li><strong>PWAs vs. Apps and Websites:</strong> A comparison between PWAs, native apps, and 
+            traditional websites, highlighting their differences and advantages.</li>
+        <li><strong>References:</strong> A list of references used in the creation of this 
+            project.</li>
+        <li><strong>About Page:</strong> The current page, where I introduce myself and provide information about 
+            the project.</li>
+    </ul>
     <hr>
 
-    <h2><u>Author</u></h2>
-    <p>Hello, my name is Brennan Bransford, and I am a third-year student at Kennesaw State University. I am 
+    <div class="highlight-box">
+        <h2><u>Author</u></h2>
+        <p>Hello, my name is Brennan Bransford, and I am a third-year student at Kennesaw State University. I am 
         majoring in Information Technology (IT) with a concentration on Data Analytics and Technology.</p>
-
+    </div>
+    
     <p>So far, my IT-related skills include: </p>
     <!--I used inline styling to keep the bullet points, but align the list left and center it-->
     <ul style="text-align: left; display: inline-block;">
@@ -47,31 +74,16 @@
         <li>Proficiency with Microsoft Office Suite</li>
     </ul>
     <hr>
+    </main>
 
-    <h2><u>Project Purpose and Overview</u></h2>
-    <p>This website was created for my Intro to Web Development (IT 3203) course to explore and explain the 
-        concept of Progressive Web Applications (PWAs). The goal of this project is to provide a comprehensive 
-        overview of PWAs and their features while showcasing and applying web development skills.</p>
-    <br>
-    <p>This site consists of several pages that cover different topics related to PWAs:</p>
-    <!--I used the class in my stylesheet to style this list differently with no bullet points and left aligned-->
-    <ul class="special-list">
-        <li><strong>Home Page:</strong> An introduction to PWAs and their key features.</li>
-        <li><strong>Key Concepts:</strong> A table of definitions of the key concepts discussed.</li>
-        <li><strong>How PWAs Work:</strong> An in-depth look at the technologies behind PWAs, including 
-            service workers, web app manifests, and more.</li>
-        <li><strong>PWAs vs. Apps and Websites:</strong> A comparison between PWAs, native apps, and 
-            traditional websites, highlighting their differences and advantages.</li>
-        <li><strong>References:</strong> A list of references used in the creation of this 
-            project.</li>
-        <li><strong>About Page:</strong> The current page, where I introduce myself and provide information about 
-            the project.</li>
-    </ul>
-    <hr>
-    <!-- I linked the footer here again for the 2nd time-->
-    <footer id="special"> This is a class project for KSU IT 3203.
-        <!--I set the target to _blank to open the link in a new tab-->
-        <a href="https://ksuweb.github.io/IT3203/" target="_blank"> Course Link</a>
+    <footer id="footer">
+        <a href="Quiz.html" class="footer-button back"> Back </a>
+        <span>
+            This is a class project for KSU IT 3203.
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank"> Course Link</a>
+        </span>
+
+        <a href="References.html" class="footer-button next"> Next </a>
     </footer>
 </body>
 </html>
